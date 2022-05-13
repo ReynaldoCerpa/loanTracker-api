@@ -1,18 +1,14 @@
 package main
 
 import (
-	"loantracker-api/modules"
+	"loantracker-api/router"
 
-	"github.com/gin-gonic/gin"
+	//"fmt"
+
 )
 
 func main () {
-	modules.SayHi()
-	r := gin.Default()
-	r.GET("/ping", func(c *gin.Context){
-		c.JSON(200, gin.H{
-			"message": modules.SayHi(),
-		})
-	})
-	r.Run()
+	
+	router.Run()
+
 }
