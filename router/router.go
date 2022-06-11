@@ -10,7 +10,7 @@ func Run() {
 
 	router := gin.Default()
 	
-	router.GET("/", routes.Hello)
+	router.GET("/hello", routes.Hello)
 
 	router.Run()
 }
